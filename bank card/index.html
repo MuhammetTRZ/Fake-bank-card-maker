@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=1024">
+    <title>Document</title>
+    <link rel="stylesheet" href="bank_card.css">
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="kart_tarafi">
+        <div class="card-container" id="card-container">
+        <div class="card">
+            <div class="card-front" id="card-fronId">
+            <div class="greenMark"></div>
+            <div class="card_üst"><p class="kartname">-----</p></div>
+            <div class="kart_govde">
+            <div class="kartNumara">--------------</div>
+            <div class="skt">Skt:</div>
+            <div class="sktGün">--</div>
+            <div class="ayırıcı">/</div>
+            <div class="sktYıl">--</div>
+            </div>  
+            <div class="card_alt"><p class="ad_soyad">-----</p></div>
+        </div>  
+        <div class="card-back" id="card-backId">
+            <div class="arka_card_üst"><p class="arka_iletişim_bilgileri">Müşteri İletişim Merkezi 111 0 222</p></div>/<!--/ 0585 222 444-->
+            <div class="arka_kart_govde"></div>
+            <div  id="çerçeve" class="çerçeve"></div><!--todo çerçeve burada-->
+            <div class="arka_cvv">cvv</div>
+            <div class="arka_cvv_value">---</div>
+            <div class="arka_card_alt"></div>
+            <div class="bankaName">bankname</div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="veri_bilgi">
+        <div class="veri_box">
+            <a href="https://www.instagram.com/muhammetars_04/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <div class="yönKontrol" ></div>
+        <input placeholder="kart ismi" maxlength="15" type="text" class="inputKartName">
+            <input placeholder="kart numarası" id="kartNumarasi" maxlength="19" type="text" class="inputKartNo">
+            <input placeholder="gün" type="text" maxlength="2" class="inputgun">
+            <input placeholder="yıl" type="text" maxlength="2" class="inputYıl">
+            <input placeholder="cvv" type="text" maxlength="3" class="inputCvv">
+            <input type="file" id="inputPhoto" class="inputPhoto" accept="image/*">
+            <input placeholder="isim soy isim" maxlength="25" type="text" class="input_isimSoyisim">
+                <button id="buton" class="input_save">Kaydet</button>
+                <button id="random" class="input_random">random</button>
+        </div>
+    </div>
+    <script src="bank_card.js"></script>
+</body>
+</html>
